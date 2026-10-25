@@ -1,0 +1,13 @@
+{
+  "task.butcher_maid.board": "案板切配",
+  "task.butcher_maid.board.desc": "在案板上把整块肉、动物头、连串香肠切成成品",
+  "task.butcher_maid.extrude": "灌肠",
+  "task.butcher_maid.extrude.desc": "用灌肠配件把绞肉做成香肠",
+  "task.butcher_maid.grind": "绞肉",
+  "task.butcher_maid.grind.desc": "把碎肉放进绞肉机磨成绞肉",
+  "task.butcher_maid.hook": "挂肉钩屠宰",
+  "task.butcher_maid.hook.desc": "把背包里的胴体挂上肉钩，按工序换工具完成放血、剥皮、锯骨、穿肠、屠宰",
+  "task.butcher_maid.hunt": "狩猎",
+  "task.butcher_maid.hunt.condition.hold_butcher_knife": "主手持有屠刀",
+  "task.butcher_maid.hunt.desc": "在附近寻找可屠宰的动物，用屠刀取下胴体"
+}

@@ -1,0 +1,13 @@
+{
+  "task.butcher_maid.board": "Block Cutting",
+  "task.butcher_maid.board.desc": "Cuts whole meat, animal heads and linked sausages into products on a butcher block",
+  "task.butcher_maid.extrude": "Sausage Making",
+  "task.butcher_maid.extrude.desc": "Extrudes ground meat into sausages with the extruder attachment",
+  "task.butcher_maid.grind": "Grinding",
+  "task.butcher_maid.grind.desc": "Grinds scraps into ground meat in a grinder",
+  "task.butcher_maid.hook": "Meat Hook Butchering",
+  "task.butcher_maid.hook.desc": "Hangs carcasses on a meat hook and works through bleeding, skinning, sawing, gutting and butchering",
+  "task.butcher_maid.hunt": "Hunting",
+  "task.butcher_maid.hunt.condition.hold_butcher_knife": "Holding a butcher knife in the main hand",
+  "task.butcher_maid.hunt.desc": "Hunts nearby animals and takes their carcasses with a butcher knife"
+}

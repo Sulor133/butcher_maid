@@ -1,0 +1,30 @@
+{
+  "values": [
+    "minecraft:beef",
+    "minecraft:porkchop",
+    "minecraft:mutton",
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "butchercraft:cow_head_item",
+    "butchercraft:pig_head_item",
+    "butchercraft:sheep_head_item",
+    "butchercraft:goat_head_item",
+    "butchercraft:chicken_head_item",
+    "butchercraft:rabbit_black_head_item",
+    "butchercraft:rabbit_brown_head_item",
+    "butchercraft:rabbit_gold_head_item",
+    "butchercraft:rabbit_salt_head_item",
+    "butchercraft:rabbit_splotched_head_item",
+    "butchercraft:rabbit_white_head_item",
+    "butchercraft:sausage_linked",
+    "butchercraft:blood_sausage_linked",
+    "butchercraft:chicken_carcass",
+    "butchercraft:black_rabbit_carcass",
+    "butchercraft:brown_rabbit_carcass",
+    "butchercraft:gold_rabbit_carcass",
+    "butchercraft:salt_rabbit_carcass",
+    "butchercraft:splotched_rabbit_carcass",
+    "butchercraft:white_rabbit_carcass",
+    "butchercraft:tripe"
+  ]
+}
