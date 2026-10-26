@@ -1,8 +1,6 @@
 # Butcher Maid
 
-Vanilla drops only a few cuts of meat from an animal and wastes the rest. **ButcherCraft** adds a
-complete dismantling process — and this addon hands that entire process over to your maids, from the
-first cut to the last sausage.
+Vanilla drops only a few cuts of meat from an animal and wastes the rest. **ButcherCraft** adds a process
 
 ```
 Hunting → Meat Hook → Butcher Block → Grinding → Sausage Making → Butcher Block (unlinking)
@@ -18,9 +16,8 @@ Hunting → Meat Hook → Butcher Block → Grinding → Sausage Making → Butc
 | **Sausage Making** | Fits the extruder attachment, keeps 8 ground meat and 1 casing on hand, and extrudes them into links of sausage |
 | **Block Cutting** | Cuts whole meat, animal heads and sausage links on the butcher block; fetches glass bottles and water buckets from her backpack when they run out |
 
-- The five tasks are fully independent — split one production line across several maids, or give the whole thing to a single one
+- The five tasks are fully independent 
 - Output goes straight into her backpack; she pauses when it is full and resumes on her own once there is room
-- Two maids never fight over the same workstation: occupancy is registered per UUID and released automatically after 10 seconds of idling
 
 ## Requirements
 
@@ -46,7 +43,7 @@ Code: [MIT](LICENSE). See [LICENSE](LICENSE) for the full text.
 # 屠夫女仆
 
 原版杀一只动物只掉几块肉，剩下的都浪费了。**屠宰工艺**补上了完整的解体流程，
-而这个附属把那套流程整个交给女仆——从第一刀到最后一根香肠。
+而这个附属把任务交给女仆
 
 ```
 狩猎 → 挂肉钩 → 案板 → 绞肉 → 灌肠 → 案板（拆串）
@@ -62,9 +59,8 @@ Code: [MIT](LICENSE). See [LICENSE](LICENSE) for the full text.
 | **灌肠** | 自己装上灌肠配件，保持 8 份绞肉和 1 个肠衣，把肉灌成连串香肠 |
 | **案板切配** | 在案板上切整块肉、动物头和连串香肠；缺玻璃瓶和水桶时会自己去背包里拿 |
 
-- 五个任务互相独立，可以把一条流水线拆给不同女仆分工，也可以全交给一个女仆
+- 五个任务互相独立
 - 产物自动进背包，背包满了会停工，腾出空间后自己复工
-- 两个女仆不会抢同一台工作站：按 UUID 登记占用，闲置 10 秒自动释放
 
 ## 前置
 
