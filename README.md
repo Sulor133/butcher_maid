@@ -1,6 +1,51 @@
-# 屠夫女仆 Butcher Maid
+# Butcher Maid
 
-原版杀一只动物只掉几块肉，剩下的都浪费了。屠宰工艺补上了完整的解体流程，
+Vanilla drops only a few cuts of meat from an animal and wastes the rest. **ButcherCraft** adds a
+complete dismantling process — and this addon hands that entire process over to your maids, from the
+first cut to the last sausage.
+
+```
+Hunting → Meat Hook → Butcher Block → Grinding → Sausage Making → Butcher Block (unlinking)
+```
+
+## Features
+
+| Task | What the maid does |
+|---|---|
+| **Hunting** | Looks for animals that can be butchered nearby, takes their carcasses with a butcher knife and puts them straight into her backpack |
+| **Meat Hook Butchering** | Hangs carcasses on a meat hook and swaps tools by herself to work through bleeding, skinning, sawing, gutting and butchering |
+| **Grinding** | Fits the grinder attachment, feeds in scraps and turns the crank, collecting ground meat into her backpack |
+| **Sausage Making** | Fits the extruder attachment, keeps 8 ground meat and 1 casing on hand, and extrudes them into links of sausage |
+| **Block Cutting** | Cuts whole meat, animal heads and sausage links on the butcher block; fetches glass bottles and water buckets from her backpack when they run out |
+
+- The five tasks are fully independent — split one production line across several maids, or give the whole thing to a single one
+- Output goes straight into her backpack; she pauses when it is full and resumes on her own once there is room
+- Two maids never fight over the same workstation: occupancy is registered per UUID and released automatically after 10 seconds of idling
+
+## Requirements
+
+| | |
+|---|---|
+| Minecraft | **1.20.1** |
+| Forge | **47.x** |
+| [Touhou Little Maid](https://modrinth.com/mod/touhou-little-maid) | **1.5.3+** |
+| [ButcherCraft](https://modrinth.com/mod/butchercraft) | **2.4.1 ~ 2.4.x** |
+
+## Credits
+
+- **TartaricAcid** and the Touhou Little Maid team — the maid framework, task API and addon examples
+- **Lance5057** — ButcherCraft, along with its workstations and recipes
+- **ZUN** — Touhou Project
+
+## License
+
+Code: [MIT](LICENSE). See [LICENSE](LICENSE) for the full text.
+
+---
+
+# 屠夫女仆
+
+原版杀一只动物只掉几块肉，剩下的都浪费了。**屠宰工艺**补上了完整的解体流程，
 而这个附属把那套流程整个交给女仆——从第一刀到最后一根香肠。
 
 ```
