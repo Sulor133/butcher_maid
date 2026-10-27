@@ -1,13 +1,14 @@
 package com.github.sulor133.butcher_maid.behavior;
 
 import com.github.sulor133.butcher_maid.station.MaidBlockWork;
-import com.github.sulor133.butcher_maid.station.MaidGrinderWork;
-import com.github.sulor133.butcher_maid.station.MaidHookWork;
+import com.github.sulor133.butcher_maid.util.MaidDropUtil;
+import com.github.sulor133.butcher_maid.util.MaidInvUtil;
 import com.github.tartaricacid.touhoulittlemaid.entity.passive.EntityMaid;
 import com.lance5057.butchercraft.workstations.bases.recipes.AnimatedRecipeItemUse;
 import com.lance5057.butchercraft.workstations.butcherblock.ButcherBlockBlockEntity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
+
 
 import java.util.Optional;
 
@@ -66,7 +67,7 @@ public class MaidBlockWorkBehavior extends MaidStationBehavior<ButcherBlockBlock
             return;                     //没配方
         }
         int needCount = Math.max(1, current.get().count);
-        if (!MaidHookWork.holdTool(maid, current.get().tool, needCount)) {
+        if (!MaidInvUtil.holdTool(maid, current.get().tool, needCount)) {
             return;                     //缺工具
         }
 
@@ -76,7 +77,7 @@ public class MaidBlockWorkBehavior extends MaidStationBehavior<ButcherBlockBlock
         maid.swing(InteractionHand.MAIN_HAND);
         if (MaidBlockWork.butcher(level, maid, block)) {
             MaidBlockWork.touch(block);                         //每次真的推进就续租
-            MaidGrinderWork.collectDrops(level, maid, block.getBlockPos());
+            MaidDropUtil.collectFreshDrops(level, maid, block);
         }
     }
 }

@@ -1,6 +1,8 @@
 package com.github.sulor133.butcher_maid.behavior;
 
 import com.github.sulor133.butcher_maid.station.MaidHookWork;
+import com.github.sulor133.butcher_maid.util.MaidDropUtil;
+import com.github.sulor133.butcher_maid.util.MaidInvUtil;
 import com.github.tartaricacid.touhoulittlemaid.entity.passive.EntityMaid;
 import com.lance5057.butchercraft.workstations.bases.recipes.AnimatedRecipeItemUse;
 import com.lance5057.butchercraft.workstations.hook.MeatHookBlockEntity;
@@ -46,7 +48,7 @@ public class MaidHookWorkBehavior extends MaidStationBehavior<MeatHookBlockEntit
             return;                     //没配方
         }
         int needCount = Math.max(1, hook.toolCount);
-        if (!MaidHookWork.holdTool(maid, current.get().tool, needCount)) {
+        if (!MaidInvUtil.holdTool(maid, current.get().tool, needCount)) {
             return;                     //缺工具
         }
 
@@ -55,7 +57,7 @@ public class MaidHookWorkBehavior extends MaidStationBehavior<MeatHookBlockEntit
         }
         maid.swing(InteractionHand.MAIN_HAND);
         if (MaidHookWork.butcher(level, maid, hook)) {
-            MaidHookWork.collectDrops(level, maid, hook);
+            MaidDropUtil.collectFreshDrops(level, maid, hook);
         }
     }
 }

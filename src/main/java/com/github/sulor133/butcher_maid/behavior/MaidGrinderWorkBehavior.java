@@ -7,6 +7,8 @@ import com.lance5057.butchercraft.workstations.grinder.GrinderBlockEntity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.ItemStack;
+import com.github.sulor133.butcher_maid.util.MaidDropUtil;
+
 
 /** 绞肉 / 灌肠：装配件 -> 补料 -> 摇把手 -> 收产物 */
 public class MaidGrinderWorkBehavior extends MaidStationBehavior<GrinderBlockEntity> {
@@ -72,7 +74,7 @@ public class MaidGrinderWorkBehavior extends MaidStationBehavior<GrinderBlockEnt
         }
         maid.swing(InteractionHand.MAIN_HAND);
         if (MaidGrinderWork.crank(grinder)) {
-            MaidGrinderWork.collectDrops(level, maid, grinder.getBlockPos());
+            MaidDropUtil.collectFreshDrops(level, maid, grinder);
         }
     }
 }
